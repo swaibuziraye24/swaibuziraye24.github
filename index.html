@@ -144,6 +144,53 @@ header {
     }
 
 }
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #0a1f44;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1a3a7a;
+    transform: scale(1.05);
+}
+
+.section {
+    animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+.project-card {
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
     </style>
 
 </head>
@@ -215,6 +262,19 @@ alert("Welcome to my portfolio!");
 <footer>
     <p>© 2026 Swaibu Ziraye </p>
 </footer>
+
+body {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 </body>
 </html>
