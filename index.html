@@ -4,6 +4,8 @@
 <head>
     <title>My Portfolio</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
@@ -100,6 +102,41 @@ header {
 .project-card:hover {
     transform: scale(1.05);
     transition: 0.3s;
+}
+
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
 }
     </style>
 
