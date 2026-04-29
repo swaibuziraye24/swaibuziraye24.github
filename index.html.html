@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Tech Services</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background: linear-gradient(to right, #0a1f44, #1a3a7a);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        nav {
+            background: #1a3a7a;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        footer {
+            background: #0a1f44;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.section {
+    padding: 30px 20px;
+}
+
+button {
+    background: #0a1f44;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Smart Tech Services</h1>
+    <p>Your Trusted Computer & Phone Solutions</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="section">
+    <h2>About Us</h2>
+    <p>We provide affordable and reliable tech services including phone repair, software installation, and web services.</p>
+</div>
+
+<div class="section" id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Phone Repair</h3>
+            <p>Screen replacement and fixing phone issues.</p>
+        </div>
+
+        <div class="card">
+            <h3>Software Installation</h3>
+            <p>Install Windows, apps, and antivirus.</p>
+        </div>
+
+        <div class="card">
+            <h3>Website Creation</h3>
+            <p>Simple websites for your business.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: 0700000000</p>
+    <p>📍 Location: Kampala, Uganda</p>
+</div>
+
+<script>
+document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+<footer>
+    <p>© 2026 Smart Tech Services</p>
+</footer>
+
+<a href="https://wa.me/+256705816160" target="_blank" class="whatsapp">
+    Chat on WhatsApp
+</a>
+</body>
+</html>
