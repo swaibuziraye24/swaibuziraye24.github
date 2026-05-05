@@ -1,0 +1,280 @@
+</> HTML      
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #0a1f44;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #0a1f44;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .projects p {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0a1f44;
+            color: white;
+        }
+        body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #0a1f44, #1a3a7a);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+}
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #0a1f44;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1a3a7a;
+    transform: scale(1.05);
+}
+
+.section {
+    animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+.project-card {
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Swaibu Ziraye</h1>
+    <p>Beginner Web Developer | IT Enthusiast</p>
+    <button onclick="toggleDark()">Toggle Dark Mode</button>
+</header>
+
+<div class="container">
+
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I am a beginner web developer from Uganda, passionate about learning coding and building real solutions.</p>
+        <p>I am a very focused beginner that even teaches others who are below my knowledge</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (Beginner)</li>
+            <li>Basic Computer Skills</li>
+        </ul>
+    </div>
+
+    <div class="section">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Calculator App</h3>
+            <img src="calculator.png" width="100%">
+            <p>Performs basic arithmetic operations.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>To-Do List</h3>
+            <img src="todo.png" width="100%">
+            <p>Add and delete daily tasks.</p>
+        </div>
+
+    </div>
+</div>
+
+    <
+
+    <div class="section">
+        <h2>0705816160</h2>
+        <h2>0776735131</h2>
+        <p>Email: Swaibuziraye22@gmail.com</p>
+    </div>
+
+</div>
+
+<script>
+function toggleDark() {
+    document.body.classList.toggle("dark");
+}
+
+alert("Welcome to my portfolio!");
+</script>
+
+<footer>
+    <p>© 2026 Swaibu Ziraye </p>
+</footer>
+
+body {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+</body>
+</html>
